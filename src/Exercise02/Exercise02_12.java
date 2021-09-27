@@ -16,22 +16,23 @@ import java.text.DecimalFormat;
  * Write a program that prompts the user to enter v in meters/second (m/s) and the 
  * acceleration a in meters/second squared (m/s2), and displays the minimum runway length.
  */
+
 public class Exercise02_12 
 {
     public static void main(String[] args)
     {
-       Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         System.out.print("Enter speed and acceleration: ");
         
-	    //Input from user to enter speed and accelaration
+        //Input from user to enter speed and accelaration
         double speed = input.nextDouble();
         double acceleration = input.nextDouble();
 		
         //Calculate minimum runway length
         double length =(speed*speed) / (2 * acceleration);
 		
-	    //Use decimalformat to print 3 digit after point
+        //Use decimalformat to print 3 digit after point
         DecimalFormat df = new DecimalFormat();
         df.setMaximumFractionDigits(3);
         

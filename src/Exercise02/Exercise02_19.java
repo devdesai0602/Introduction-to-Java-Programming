@@ -6,7 +6,7 @@ The formula for computing the distance is Note that
 you can use Math.pow(a, 0.5) to compute Here is a sample run:
  */
 import java.util.Scanner;
-public class Exercise2_19 {
+public class Exercise02_19 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter x1 and y1: ");
